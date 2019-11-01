@@ -1,8 +1,8 @@
 # Generating Documentation 
 Nobody will use your code if it does not have documentation. 
-This tutorial will show you how to:
-- Create a folder for documentation-related code
-- Use sphinx to generate documentation based on docstrings
+This tutorial will show you how to use sphinx to generate documentation based on docstrings
+in your code, and how to host them on `netlify`. For a tutorial on how to write the docstrings 
+themselves, see `x`.
 
 ### Requirements
 
