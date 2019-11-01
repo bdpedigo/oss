@@ -1,14 +1,14 @@
 # Generating Documentation 
 Nobody will use your code if it does not have documentation. 
-This tutorial will show you how to use sphinx to generate documentation based on docstrings
-in your code, and how to host them on `netlify`. For a tutorial on how to write the docstrings 
-themselves, see `x`.
+This tutorial will show you how to use sphinx to generate documentation based on 
+docstrings in your code, and how to host them on `netlify`. For a tutorial on how to 
+write the docstrings themselves, see `x`.
 
 ### Requirements
 
-Create a file in the top level of your repository called `docs`.
+Create a file in the top level of your repository called `docs/`.
 
-Create a file called `requirements.txt` in the `docs` folder. 
+Create a file called `requirements.txt` in the `docs/` folder. 
 
 In the `requirements.txt` file, add the following dependencies: 
   
@@ -20,13 +20,15 @@ In the `requirements.txt` file, add the following dependencies:
 
 These packages are required for building the documentation pages. 
 
-Once you have created `requirements.txt`, navigate to `/docs` from the
+Once you have created `requirements.txt`, navigate to `docs/` from the
 command line and install these packages using `pip`: 
 
      pip3 install -r requirements.txt
      
 In addition, you need to install `pandoc` for `nbsphinx`. `nbsphinx` will allow
-you to use `jupyter` notebooks to make documentation tutorial pages.
+you to use `jupyter` notebooks to make documentation tutorial pages. If you don't want 
+to have `jupyter` notebooks in your documentation yet, you can skip this step for now.
+
 If you are on linux, you can enter: 
 
     sudo apt-get install pandoc
@@ -35,17 +37,21 @@ If you are on macOS and have `homebrew` installed, you can enter:
 
     brew install pandoc
 
-Otherwise, you can visit [pandoc installing page](https://pandoc.org/installing.html) for more information.
+Otherwise, you can visit [pandoc installing page](https://pandoc.org/installing.html) 
+for more information.
 
 ### File structure
-The `docs` folder is where you will put everything `sphinx` needs to generate the documentation, 
-aside from the docstrings themselves. 
+The `docs` folder is where you will put everything `sphinx` needs to generate the 
+documentation, aside from the docstrings themselves. 
 
 ### Sphinx-quickstart
-On the command line, type 
+On the command line, type
 
     sphinx-quickstart
   
+You will now be prompted with a series of questions, the default parameter is listed
+inside the `[]`. For most of these, I just hit enter to keep the default value: 
+
     > Separate source and build directories (y/n) [n]:
     > Name prefix for templates and static dir [_]:
     > Project name: {type your project name here}
@@ -67,11 +73,13 @@ On the command line, type
     > Create Makefile? (y/n) [y]:
     > Create Windows command file? (y/n) [y]:
 
-Several files should have been created. Let's look at `index.rst` and start by adding a simple page for the package licence. 
+Several files should have been created. Let's look at `index.rst` and start by adding a
+simple page for the package licence. 
 
-Choose a license for your package (for example, [Apache](https://www.apache.org/licenses/LICENSE-2.0.txt)).
+Choose a license for your package 
+(for example, [Apache](https://www.apache.org/licenses/LICENSE-2.0.txt)).
 
-Create a file in the `docs/` folder called `license.rst` and add the following header
+Create a file in the `docs/` folder called `license.rst` and add the following text:
 
     License
     =======
@@ -85,8 +93,12 @@ Create a file in the `docs/` folder called `license.rst` and add the following h
 
 ### Generating the documentation
 
-To build the HTML documentation, enter:
+Now, lets see what the output of `sphinx` looks like. To build the HTML documentation,
+type:
 
     make html
 
-in the `doc/` directory. If all goes well, this will generate a `_build/html/` subdirectory containing the built documentation.
+in the `doc/` directory. If all goes well, this will generate a `_build/html/` 
+subdirectory containing the built documentation. You can open the HTML file `index.html`
+to see what the home page of your documentation will look like. You should notice a
+`License` link on the left hand side of the page.
