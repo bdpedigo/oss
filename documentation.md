@@ -67,6 +67,22 @@ On the command line, type
     > Create Makefile? (y/n) [y]:
     > Create Windows command file? (y/n) [y]:
 
+Several files should have been created. Let's look at `index.rst` and start by adding a simple page for the package licence. 
+
+Choose a license for your package (for example, [Apache](https://www.apache.org/licenses/LICENSE-2.0.txt)).
+
+Create a file in the `docs/` folder called `license.rst` and add the following header
+
+    License
+    =======
+    {package name} is distributed with the {name of license goes here} license.
+
+    ::
+    
+    {text of the license goes here}
+    
+
+
 ### Generating the documentation
 
 To build the HTML documentation, enter:
