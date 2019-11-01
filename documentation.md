@@ -19,7 +19,9 @@ command line and install these packages using `pip`:
 
      pip3 install -r requirements.txt
      
-In addition, you need to install `pandoc` for `nbsphinx`. If you are on linux, you can enter: 
+In addition, you need to install `pandoc` for `nbsphinx`. `nbsphinx` will allow
+you to use `jupyter` notebooks to make documentation tutorial pages.
+If you are on linux, you can enter: 
 
     sudo apt-get install pandoc
 
