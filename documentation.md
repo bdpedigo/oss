@@ -1,6 +1,12 @@
-Create a file in the top level of your repository called `docs`.
+# Generating Documentation 
+Nobody will use your code if it does not have documentation. 
+This tutorial will show you how to:
+- Create a folder for documentation-related code
+- Use sphinx to generate documentation based on docstrings
 
 ### Requirements
+
+Create a file in the top level of your repository called `docs`.
 
 Create a file called `requirements.txt` in the `docs` folder. 
 
