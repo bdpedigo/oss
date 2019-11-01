@@ -27,7 +27,6 @@ Resources for the open-source software development course
     - PR those changes into your repo's `master`
 - Wednesday
   - Writing maintainable code
-- Thursday
   - Writing tests
   - Travis
   - Contributing guidelines
@@ -39,6 +38,12 @@ Resources for the open-source software development course
     - Make a new PR, show that tests are run and pass
     - Have contributing guidelines for your repo 
     - Have a license for your repo
+- Thursday
+  - Writing documentation
+  - **Deliverables**
+    - Write a docstring using `numpydoc` for at least one class or function
+    - Create a documentation page using `sphinx`
+    - Host the documentation on `netify`
 - Friday
   - Intro to project
   - Contributing to established packages
