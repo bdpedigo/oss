@@ -41,6 +41,32 @@ Otherwise, you can visit [pandoc installing page](https://pandoc.org/installing.
 The `docs` folder is where you will put everything `sphinx` needs to generate the documentation, 
 aside from the docstrings themselves. 
 
+### Sphinx-quickstart
+On the command line, type 
+
+    sphinx-quickstart
+  
+    > Separate source and build directories (y/n) [n]:
+    > Name prefix for templates and static dir [_]:
+    > Project name: {type your project name here}
+    > Author name(s): {type your author names}
+    > Project release: {0.1 is a good start}
+    > Project language [en]:
+    > Source file suffix [.rst]:
+    > Name of your master document (without suffix) [index]:
+    > autodoc: automatically insert docstrings from modules (y/n) [n]:
+    > doctest: automatically test code snippets in doctest blocks (y/n) [n]: y
+    > intersphinx: link between Sphinx documentation of different projects (y/n) [n]: y
+    > todo: write "todo" entries that can be shown or hidden on build (y/n) [n]:
+    > coverage: checks for documentation coverage (y/n) [n]: y
+    > imgmath: include math, rendered as PNG or SVG images (y/n) [n]:
+    > mathjax: include math, rendered in the browser by MathJax (y/n) [n]: y
+    > ifconfig: conditional inclusion of content based on config values (y/n) [n]:
+    > viewcode: include links to the source code of documented Python objects (y/n) [n]: y
+    > githubpages: create .nojekyll file to publish the document on GitHub pages (y/n) [n]:
+    > Create Makefile? (y/n) [y]:
+    > Create Windows command file? (y/n) [y]:
+
 ### Generating the documentation
 
 To build the HTML documentation, enter:
