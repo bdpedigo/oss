@@ -37,7 +37,11 @@ If you are on macOS and have `homebrew` installed, you can enter:
 
 Otherwise, you can visit [pandoc installing page](https://pandoc.org/installing.html) for more information.
 
-## Generating the documentation
+### File structure
+The `docs` folder is where you will put everything `sphinx` needs to generate the documentation, 
+aside from the docstrings themselves. 
+
+### Generating the documentation
 
 To build the HTML documentation, enter:
 
