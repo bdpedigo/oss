@@ -1,5 +1,7 @@
 Create a file in the top level of your repository called `docs`.
 
+### Requirements
+
 Create a file called `requirements.txt` in the `docs` folder. 
 
 In the `requirements.txt` file, add the following dependencies: 
@@ -9,3 +11,28 @@ In the `requirements.txt` file, add the following dependencies:
     sphinxcontrib-rawfiles
     numpydoc
     nbsphinx
+
+These packages are required for building the documentation pages. 
+
+Once you have created `requirements.txt`, navigate to `/docs` from the
+command line and install these packages using `pip`: 
+
+     pip3 install -r requirements.txt
+     
+In addition, you need to install `pandoc` for `nbsphinx`. If you are on linux, you can enter: 
+
+    sudo apt-get install pandoc
+
+If you are on macOS and have `homebrew` installed, you can enter:
+
+    brew install pandoc
+
+Otherwise, you can visit [pandoc installing page](https://pandoc.org/installing.html) for more information.
+
+## Generating the documentation
+
+To build the HTML documentation, enter:
+
+    make html
+
+in the `doc/` directory. If all goes well, this will generate a `_build/html/` subdirectory containing the built documentation.
